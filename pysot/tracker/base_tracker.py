@@ -9,6 +9,10 @@ import cv2
 import numpy as np
 import torch
 
+# as of december 2023, there is a runtime error "RuntimeError: CuDNN error: CUDNN_STATUS_SUCCESS"
+# https://stackoverflow.com/questions/62752522/runtimeerror-cudnn-error-cudnn-status-success
+torch.backends.cudnn.benchmark = True
+
 from pysot.core.config import cfg
 
 
