@@ -36,8 +36,8 @@ pip install tensorboardX
 # libs
 pip install pyyaml yacs tqdm colorama matplotlib
 
+#as of december 2023, recent version of Cython provide problems for compiling the additional extensions
 pip install cython==0.29.24 -f http://www-vpu.eps.uam.es/~jcs/DLVSP/pkgs/dlvsp.html --trusted-host www-vpu.eps.uam.es
-
 
 echo "***** build extensions *****"
 python setup.py build_ext --inplace
