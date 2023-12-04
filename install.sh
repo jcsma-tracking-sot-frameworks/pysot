@@ -20,7 +20,7 @@ conda activate $env_name
 
 echo "***** install numpy pytorch opencv *****"
 # numpy
-conda install -y numpy
+#conda install -y numpy
 # pytorch
 # pytorch with cuda80/cuda90 is tested
 conda install -y pytorch=0.4.1 torchvision cuda90 -c pytorch
@@ -35,4 +35,4 @@ pip install pyyaml yacs tqdm colorama matplotlib cython
 
 
 echo "***** build extensions *****"
-python setup.py build_ext --inplace
+#python setup.py build_ext --inplace
