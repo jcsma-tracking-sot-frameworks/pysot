@@ -19,6 +19,9 @@ conda create -y --name $env_name python=3.7
 conda activate $env_name
 
 echo "***** install numpy pytorch opencv *****"
+# opencv
+pip install opencv-python
+
 # numpy
 #conda install -y numpy
 # pytorch
