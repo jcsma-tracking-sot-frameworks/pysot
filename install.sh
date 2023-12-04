@@ -19,11 +19,8 @@ conda create -y --name $env_name python=3.7
 conda activate $env_name
 
 echo "***** install numpy pytorch opencv *****"
-# opencv
-pip install opencv-python
-
 # numpy
-#conda install -y numpy
+conda install -y numpy
 # pytorch
 # pytorch with cuda80/cuda90 is tested
 conda install -y pytorch=0.4.1 torchvision cuda90 -c pytorch
@@ -35,7 +32,6 @@ echo "***** install other libs *****"
 pip install tensorboardX
 # libs
 pip install pyyaml yacs tqdm colorama matplotlib cython
-
 
 echo "***** build extensions *****"
 #python setup.py build_ext --inplace
