@@ -34,7 +34,10 @@ pip install opencv-python
 echo "***** install other libs *****"
 pip install tensorboardX
 # libs
-pip install pyyaml yacs tqdm colorama matplotlib cython
+pip install pyyaml yacs tqdm colorama matplotlib
+
+pip install cython==0.29.24 -f http://www-vpu.eps.uam.es/~jcs/DLVSP/pkgs/dlvsp.html --trusted-host www-vpu.eps.uam.es
+
 
 echo "***** build extensions *****"
 python setup.py build_ext --inplace
