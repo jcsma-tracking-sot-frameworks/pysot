@@ -37,4 +37,4 @@ pip install tensorboardX
 pip install pyyaml yacs tqdm colorama matplotlib cython
 
 echo "***** build extensions *****"
-python setup.py build_ext --inplace
+#python setup.py build_ext --inplace
